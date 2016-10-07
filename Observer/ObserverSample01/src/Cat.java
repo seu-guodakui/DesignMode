@@ -5,10 +5,8 @@ public class Cat extends MySubject
 		System.out.println("Ã¨½Ð£¡");
 		System.out.println("----------------------------");		
 		
-		for(Object obs:observers)
-		{
-			((MyObserver)obs).response();
-		}
-		
-	}	   	
+		mynotify();
+	}
+	
+
 }

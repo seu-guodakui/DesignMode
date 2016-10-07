@@ -16,5 +16,12 @@ public abstract class MySubject
 		observers.remove(observer);
 	}
 	
+	public void mynotify(){
+		for(Object obs:observers)
+		{
+			((MyObserver)obs).response();
+		}
+	}
+	
 	public abstract void cry(); //抽象通知方法
 }
